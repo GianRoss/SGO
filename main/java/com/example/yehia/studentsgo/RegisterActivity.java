@@ -126,7 +126,10 @@ public class RegisterActivity extends LoginActivity implements AdapterView.OnIte
                     profileStatus = false;
 
                  if (!TextUtils.isEmpty(Email) && !TextUtils.isEmpty(Name) && !TextUtils.isEmpty(Sur) && !TextUtils.isEmpty(Pass) && !TextUtils.isEmpty(CellNum) && !TextUtils.isEmpty(BDay)) {
-                sendUser(Email, Name, Sur, Pass,c_pass ,CellNum, BDay, Sex, profileStatus);
+                      arrayUser.add(new User(name, sur, email, cellNum, sex, BDay, profileStatus,pass,c_pass));
+                      Toast.makeText(this,"Profilo Creato",Toast.LENGTH_SHORT);
+                     startActivity(new Intent(LoginActivity.this, LoginAcitvity.class));
+                     //sendUser(Email, Name, Sur, Pass,c_pass ,CellNum, BDay, Sex, profileStatus);
                 }
             }
         });
