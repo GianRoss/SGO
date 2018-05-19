@@ -24,7 +24,7 @@ import static com.example.yehia.studentsgo.service.ServiceProvider.getService;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private View usernameView;
+    private EditText usernameView;
     private EditText passwordView;
     public static final String APP_NAME = "com.example.yehia.studentsgo.STUDENTSGO";
     public static final String Username_key = "Yehia";
@@ -33,6 +33,8 @@ public class LoginActivity extends AppCompatActivity {
     public static SharedPreferences sharedPreferences;
     private ImageView toggleImg;
     public static boolean verWelcToast;
+    protected ArrayList<User> arrayUser= new ArrayList<User>();
+    protected Intent intentHome = new Intent(this, HomeActivity.class);
 
 
 
@@ -41,20 +43,26 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login);
+        arrayUser.add(new User(Username_key,Password_key));
         verWelcToast=false;
-        sharedPreferences = getSharedPreferences(APP_NAME, Context.MODE_PRIVATE);
-       /* usernameView= findViewById(R.id.username);
-        passwordView = findViewById(R.id.password);*/
+       // sharedPreferences = getSharedPreferences(APP_NAME, Context.MODE_PRIVATE);
+        usernameView= findViewById(R.id.username);
+        passwordView = findViewById(R.id.password);
         toggleImg= findViewById(R.id.toggle_img);
+        
+        for(int i=0;i<arrayUser.size();i++){
+            if(arrayUser.get(i).getName().equals(usernameView.getText().toString())&&arrayUser.get(i).getPassword().equals(passwordView.getText().toString()))   
+                startActivity(intentHome);
+        }
 
-        if(sharedPreferences.contains(Username_key)){
+      /*  if(sharedPreferences.contains(Username_key)){
             Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
             finish();
         }else{
             usernameView= findViewById(R.id.username);
             passwordView = findViewById(R.id.password);
-        }
+        }*/
 
         //findViewById(R.id.)
     }
