@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StudentsGo</string>
+    <string name="Login">Login</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Logout">Esci</string>
+    <string name="are_you_sure">Sei sicuro di voler uscire?</string>
+    <string name="Yes">Si</string>
+    <string name="No">No</string>
+    <string name="Confirm">Conferma</string>
+    <string name="Welcome">"Bentornato, "</string>
+    <string name="Add_to_Cart">Aggiungi Al Carrello</string>
+    <string name="AddedToCart">aggiunto al carrello</string>
+    <string name="elementsincart">Elementi nel carrello</string>
+    <string name="Delete_all">Cancellare tutto?</string>
+    <string name="Sure">Sei sicuro?</string>
+    <string name="City">"CIttà: "</string>
+</resources>

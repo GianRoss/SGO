@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email*"
+            android:layout_marginBottom="10dp"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_mail"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome*"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textWebEmailAddress"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_name"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cognome*"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_surname"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cellulare*"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_phone"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password*"
+            android:layout_marginBottom="10dp"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_password"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conferma Password*"
+            android:textSize="17dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conf_password"
+            />
+
+
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/num_days"
+            android:id="@+id/spinner_days"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/months"
+            android:id="@+id/spinner_months"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/year"
+            android:id="@+id/spinner_year"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/school"
+            android:id="@+id/spinner_school"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maschio"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/sex_m"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/sex_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Femmina" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imgView"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Seleziona Immagine profilo"
+            android:layout_marginTop="20dp"
+            android:id="@+id/photo_button"
+
+            />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passeggero"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/passenger"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Passeggero e Guidatore" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="CREA PROFILO"
+            android:layout_marginTop="20dp"
+            android:id="@+id/reg_button"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

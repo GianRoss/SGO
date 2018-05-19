@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">StudentsGo</string>
+    <string name="Login">Login</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Logout">Logout</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="are_you_sure">are you sure?</string>
+    <string name="Welcome">"Welcome, "</string>
+    <string name="Add_to_Cart">Add To Cart</string>
+    <string name="AddedToCart">added to cart.</string>
+    <string name="elementsincart">Elements in Cart</string>
+    <string name="Delete_all">Delete all</string>
+    <string name="Sure">Are you sure?</string>
+    <string name="City">City</string>
+    <string-array name="num_postidisponibili">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="num_days">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>GENNAIO</item>
+        <item>FEBBRAIO</item>
+        <item>MARZO</item>
+        <item>APRILE</item>
+        <item>MAGGIO</item>
+        <item>GIUGNO</item>
+        <item>LUGLIO</item>
+        <item>AGOSTO</item>
+        <item>SETTEMBRE</item>
+        <item>OTTOMBRE</item>
+        <item>NOVEMBRE</item>
+        <item>DICEMBRE</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+    </string-array>
+    <string-array name="school">
+        <item>Torricelli</item>
+        <item>Varalli</item>
+        <item>Custodi-Allende</item>
+    </string-array>
+    <string name="title_activity_test1">Test1</string>
+</resources>

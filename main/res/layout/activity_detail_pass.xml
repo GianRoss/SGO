@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".DetailPassActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/detail_pass_user"
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/uomo" />
+
+        <ImageView
+            android:id="@+id/detail_pass_veichle"
+            android:layout_width="187dp"
+            android:layout_height="182dp"
+            android:src="@drawable/automobile" />
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_pass_ritrovo"
+            android:textSize="20dp"
+            android:text="Ritrovo"
+            android:textAlignment="center"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_pass_orario"
+        android:textSize="20dp"
+        android:text="orario"
+        android:textAlignment="center"
+        />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_pass_prezzo"
+            android:textSize="20dp"
+            android:text="prezzo"
+            android:textAlignment="center"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_pass_note"
+        android:textSize="20dp"
+        android:text="Note"
+        android:textAlignment="center"
+        />
+
+
+</LinearLayout>
+</ScrollView>

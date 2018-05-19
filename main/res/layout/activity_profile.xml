@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/foto_utente"
+            android:src="@drawable/uomo"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="3dp"
+            android:scaleType="fitXY"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:padding="2dp"
+            android:background="@layout/imageview_border"
+
+            />
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.5"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/gift"/>
+            <TextView
+                android:id="@+id/profile_year"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/auto"/>
+            <TextView
+                android:id="@+id/profile_license"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/mail"/>
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/icon"/>
+            <TextView
+                android:id="@+id/profile_city"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/scuola"/>
+            <TextView
+                android:id="@+id/profile_school"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="Modify"
+            android:text="Modifica"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="Logout"
+            android:text="Logout"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+
+
+
+
+
+        <!--<ImageView
+         android:id="@+id/foto_mezzo"
+         android:src="@drawable/ferrari"
+         android:layout_width="190dp"
+         android:layout_height="160dp"
+         android:adjustViewBounds="true"
+         android:layout_marginLeft="3dp"
+         android:scaleType="fitXY"
+         android:layout_gravity="right"
+         android:padding="2dp"
+         android:background="@layout/imageview_border"
+
+         />-->
+
+    </LinearLayout>
+
+
+</ScrollView>

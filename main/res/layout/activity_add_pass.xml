@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddPassActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ritrovo:"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/add_pass_ritrovo"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:background="@layout/edittextstyle"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Città: :"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/add_pass_citta"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:background="@layout/edittextstyle"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Posti Disponibili"
+            android:textSize="22dp" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:entries="@array/num_postidisponibili"
+            android:textAlignment="center"
+            android:background="@layout/edittextstyle"
+            android:id="@+id/add_pass_posti"
+            >
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Orario: "
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/add_pass_orario"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@layout/edittextstyle"
+            android:inputType="time"
+
+
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: "
+            android:textSize="22dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="textStart"
+            android:background="@layout/edittextstyle"
+            android:scrollbars="vertical"
+            android:id="@+id/add_pass_note"
+            />
+
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/add_pass_genitore"
+        android:layout_width="217dp"
+        android:layout_height="43dp"
+        android:text="Genitore"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="234dp"
+        />
+    <Button
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="Aggiungi Passaggio"
+        android:onClick="addNewPass"
+        />
+</LinearLayout>
+</ScrollView>
